@@ -11,14 +11,15 @@
         <module name="ch-4-redis" />
         <module name="ch-5-mybatis-annotation" />
         <module name="ch-6-mybatis-redis" />
-        <module name="ch-7-jpa-thymeleaf-curd" />
-        <module name="ch-7-restful" />
+        <module name="ch-7-crud-jpa-thymeleaf" />
+        <module name="ch-8-restful" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ch-3-paging" target="1.8" />
       <module name="ch-5-jpa-mysql" target="1.8" />
       <module name="ch-5-mybatis" target="1.8" />
+      <module name="ch-7-jpa-thymeleaf-curd" target="1.8" />
       <module name="ch-8-dockerdemo" target="1.8" />
       <module name="ch-8-jpa" target="1.8" />
       <module name="ch-8-jpa-thymeleaf-curd" target="1.8" />

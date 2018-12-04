@@ -14,8 +14,8 @@
         <option value="$PROJECT_DIR$/ch-4-redis/pom.xml" />
         <option value="$PROJECT_DIR$/ch-5-mybatis-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/ch-6-mybatis-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/ch-7-jpa-thymeleaf-curd/pom.xml" />
         <option value="$PROJECT_DIR$/ch-7-restful/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-7-cued-jpa-thymeleaf/pom.xml" />
       </list>
     </option>
   </component>
