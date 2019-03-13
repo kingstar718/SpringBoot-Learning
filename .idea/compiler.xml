@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch-10-thymeleaf" />
+        <module name="ch-11-fileupload" />
         <module name="ch-4-redis" />
         <module name="ch-5-mybatis-annotation" />
         <module name="ch-6-mybatis-redis" />
