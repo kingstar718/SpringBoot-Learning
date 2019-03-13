@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Themeleaf</title>
+</head>
+<body>
+    <h2>赋值</h2>
+    <p th:text="'Hello, '+${name}+'!'"/>
+    <h2>字符串拼接的两种方式</h2>
+    <span  th:text="${message}">Hello World</span><br/>
+    <span th:text="|Welcome to Thymeleaf, ${message}|"></span><br/>
+    <h2>条件判断if/unless</h2>
+    <a th:if="${flag == 'yes'}" th:href="@{http://baidu.com}">baidu</a><br/>
+    <a th:unless="${flag != 'no'}" th:href="@{http://qq.com}">qq</a><br/>
+    <h2>User的list展示</h2>
+    <div>
+        <h3>for循环</h3>
+        <table>
+            <thead>
+                <th>姓名</th>
+                <th>密码</th>
+                <th>年龄</th>
+                <th>编号</th>
+            </thead>
+            <tbody>
+            <tr th:each="user,iterStat : ${users}">
+                <td th:text="${user.getName()}">dad</td>
+                <td th:text="${user.getPassword()}">sss</td>
+                <td th:text="${user.getAge()}">12</td>
+                <td th:text="${iterStat.index}">index</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br/>
+    <h2>URL</h2>
+    <a  th:href="@{http://www.ityouknow.com/{type}(type=${type})}">link1</a>
+    <br/>
+    <a th:href="@{http://www.ityouknow.com/{pageId}/can-use-springcloud.html(pageId=${pageId})}">view</a>
+    <br/>
+    <div th:style="'background:url(' + @{${img}} + ');'">
+        <br/><br/><br/>
+    </div>
+
+    <h2>内联与不用内联</h2>
+    <div>
+        <h3>内联</h3>
+        <div th:inline="text">
+            <p>Hello, [[${message}]] !</p>
+            <br/>
+        </div>
+        <br/>
+        <h3>不使用内联</h3>
+        <div>
+            <p th:text="'Hello, ' + ${message} + ' !'"></p>
+            <br/>
+        </div>
+    </div>
+    <br/>
+    <h2>request&session</h2>
+    <div>
+        <p th:text="${#request.getAttribute('request')}"></p>
+        <br/>
+        <p th:text="${#session.getAttribute('session')}"></p>
+        <br/>
+        Established locale country:<span th:text="${#locale.country}"></span>
+    </div>
+
+</body>
+<script th:inline="javascript">
+    var message = 'Hello, ' + [[${message}]];
+    alert(message)
+</script>
+</html>

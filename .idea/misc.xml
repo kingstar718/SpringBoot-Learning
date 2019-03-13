@@ -9,13 +9,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/ch-2-form-input/pom.xml" />
-        <option value="$PROJECT_DIR$/ch-3-paging-sort/pom.xml" />
         <option value="$PROJECT_DIR$/ch-4-redis/pom.xml" />
         <option value="$PROJECT_DIR$/ch-5-mybatis-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/ch-6-mybatis-redis/pom.xml" />
         <option value="$PROJECT_DIR$/ch-7-restful/pom.xml" />
         <option value="$PROJECT_DIR$/ch-7-cued-jpa-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-9-security/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-10-thymeleaf/pom.xml" />
       </list>
     </option>
   </component>
