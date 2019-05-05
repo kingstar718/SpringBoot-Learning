@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @author: wujinxing
- * @date: 2018/12/5 21:54
- * @description:
+ * @author wujinxing
+ *  date  2018/12/5 21:54
+ *  description:
  */
-@Controller
+//@Controller
 public class HelloController {
 
     @RequestMapping("/")

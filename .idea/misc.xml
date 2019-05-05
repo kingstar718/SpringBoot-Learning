@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/ch-9-security/pom.xml" />
         <option value="$PROJECT_DIR$/ch-10-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/ch-11-fileupload/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-12-fastdfs/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-13-shiro/pom.xml" />
       </list>
     </option>
   </component>

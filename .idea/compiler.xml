@@ -7,13 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch-10-thymeleaf" />
-        <module name="ch-11-fileupload" />
-        <module name="ch-4-redis" />
         <module name="ch-5-mybatis-annotation" />
-        <module name="ch-6-mybatis-redis" />
+        <module name="ch-9-security" />
         <module name="ch-7-crud-jpa-thymeleaf" />
         <module name="ch-8-restful" />
-        <module name="ch-9-security" />
+        <module name="ch-11-fileupload" />
+        <module name="ch-6-mybatis-redis" />
+        <module name="ch-13-shiro" />
+        <module name="ch-12-fastdfs" />
+        <module name="ch-4-redis" />
+      </profile>
+      <profile name="Annotation profile for ch-7-curd-jpa-thymeleaf" enabled="true">
+        <sourceOutputDir name="../ch-7-cued-jpa-thymeleaf/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../ch-7-cued-jpa-thymeleaf/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch-7-curd-jpa-thymeleaf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -36,5 +44,19 @@
       <module name="demo" target="1.8" />
       <module name="demo-war" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ch-10-thymeleaf" options="-parameters" />
+      <module name="ch-11-fileupload" options="-parameters" />
+      <module name="ch-12-fastdfs" options="-parameters" />
+      <module name="ch-13-shiro" options="-parameters" />
+      <module name="ch-4-redis" options="-parameters" />
+      <module name="ch-5-mybatis-annotation" options="-parameters" />
+      <module name="ch-6-mybatis-redis" options="-parameters" />
+      <module name="ch-7-curd-jpa-thymeleaf" options="-parameters" />
+      <module name="ch-8-restful" options="-parameters" />
+      <module name="ch-9-security" options="-parameters" />
+    </option>
   </component>
 </project>
