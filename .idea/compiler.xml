@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ch-8-restful" />
         <module name="ch-10-thymeleaf" />
-        <module name="ch-12-fastdfs" />
         <module name="ch-5-mybatis-annotation" />
-        <module name="ch-3-paging-sort" />
-        <module name="ch-9-security" />
         <module name="ch-2-form-input" />
+        <module name="ch-7-crud-jpa-thymeleaf" />
+        <module name="ch-4-redis" />
+        <module name="ch-9-security" />
         <module name="ch-7-curd-jpa-thymeleaf" />
         <module name="ch-11-fileupload" />
         <module name="ch-6-mybatis-redis" />
         <module name="ch-13-shiro" />
-        <module name="ch-7-crud-jpa-thymeleaf" />
-        <module name="ch-4-redis" />
+        <module name="ch-12-fastdfs" />
+        <module name="ch-3-paging-sort" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,7 +34,6 @@
       <module name="ch-8-dockerdemo" target="1.8" />
       <module name="ch-8-jpa" target="1.8" />
       <module name="ch-8-jpa-thymeleaf-curd" target="1.8" />
-      <module name="ch-8-restful" target="1.8" />
       <module name="ch-9-docker" target="1.8" />
       <module name="ch-9-fileupload" target="1.8" />
       <module name="demo" target="1.8" />
