@@ -19,6 +19,9 @@
         <option value="$PROJECT_DIR$/ch-11-fileupload/pom.xml" />
         <option value="$PROJECT_DIR$/ch-12-fastdfs/pom.xml" />
         <option value="$PROJECT_DIR$/ch-13-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-7-curd-jpa-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-2-form-input/pom.xml" />
+        <option value="$PROJECT_DIR$/ch-3-paging-sort/pom.xml" />
       </list>
     </option>
   </component>
