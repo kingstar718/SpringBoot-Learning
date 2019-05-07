@@ -6,6 +6,9 @@ import cn.kingstar.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import java.util.List;
+
 
 /**
  * @author: wujinxing
@@ -15,11 +18,21 @@ import org.springframework.stereotype.Service;
 @Service
 public class CityServiceImpl implements CityService {
 
-    @Autowired
+    @Resource
     private CityDao cityDao;
 
     @Override
     public City findCityByName(String cityName) {
         return cityDao.findByName(cityName);
+    }
+
+    @Override
+    public List<City> findAll() {
+        return cityDao.findAll();
+    }
+
+    @Override
+    public void insertCity(long provinceId, String cityName, String description) {
+        cityDao.insertCity(provinceId, cityName, description);
     }
 }

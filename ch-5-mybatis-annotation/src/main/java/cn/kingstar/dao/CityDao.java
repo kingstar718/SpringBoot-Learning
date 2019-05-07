@@ -3,6 +3,8 @@ package cn.kingstar.dao;
 import cn.kingstar.domain.City;
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 /**
  * @author: wujinxing
  * @date: 2018/11/18 21:23
@@ -15,7 +17,7 @@ public interface CityDao {
      * @param cityName
      * @return
      */
-    @Select("SELECT * FROM city")
+    @Select("SELECT * FROM city where city_name = #{cityName}")
     //返回map结果集
     @Results({
             @Result(property = "id",column = "id"),
@@ -24,4 +26,14 @@ public interface CityDao {
             @Result(property = "description", column = "description"),
     })
     City findByName(@Param("cityName") String cityName);
+
+    /**
+     * 查询所有
+     * @return
+     */
+    @Select("SELECT * FROM city")
+    List<City> findAll();
+
+    @Insert("INSERT INTO city(province_id, city_name, description) VALUES(#{provinceId}, #{cityName}, #{description})")
+    void insertCity(@Param("provinceId") Long provinceId, @Param("cityName") String cityName, @Param("description") String description);
 }
