@@ -1,9 +1,8 @@
 package cn.kingstar.pagging.domain;
 
-import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+
+import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.io.Serializable;
 
@@ -14,22 +13,27 @@ import java.io.Serializable;
  * @description:
  */
 @Entity
+@Table(name = "input_user")
 public class User implements Serializable {
 
     @Id
     @GeneratedValue
+    @Column(name = "id")
     private Long id;
 
     @NotEmpty(message = "姓名不能为空")
     @Size(min = 2,max = 8,message = "姓名长度必须大于2且小于20个字")
+    @Column(name = "name")
     private String name;
 
     @NotNull(message = "年龄不能为空")
     @Min(value = 0,message = "年龄不能小于0")
     @Max(value = 300,message = "年龄不能大于300")
+    @Column(name = "age")
     private Integer age;
 
     @NotEmpty(message = "出生时间不能为空")
+    @Column(name = "birthday")
     private String birthday;
 
     public Long getId() {
