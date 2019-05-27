@@ -1,11 +1,13 @@
 package cn.kingstar.domain;
 
+import java.io.Serializable;
+
 /**
  * @author: wujinxing
  * @date: 2018/11/18 21:21
  * @description:
  */
-public class City {
+public class City implements Serializable {
     private Long id;
     private Long provinceId;
     private String cityName;
