@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = "top.wujinxing.ch14buygoods")
 @MapperScan(annotationClass = Mapper.class,
-        basePackages = "top.wujinxing.ch14buygoods")
+        basePackages = "top.wujinxing.ch14buygoods.mapper")
 public class Ch14BuygoodsApplication {
 
     public static void main(String[] args) {

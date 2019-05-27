@@ -1,5 +1,7 @@
 package top.wujinxing.ch14buygoods.web;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,13 +17,15 @@ import top.wujinxing.ch14buygoods.service.PurchaseService;
 @RestController
 public class PurchaseController {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(PurchaseController.class);
     @Autowired
     PurchaseService purchaseService;
 
     //定义JSP视图
     @GetMapping("/test")
     public ModelAndView testPage(){
-        ModelAndView mv = new ModelAndView("test");
+        ModelAndView mv = new ModelAndView("test1");
+        LOGGER.info("返回视图: " + mv.getViewName());
         return mv;
     }
 
@@ -30,6 +34,7 @@ public class PurchaseController {
         boolean success = purchaseService.purchase(userId, productId, quantity);
         String message = success? "抢购成功" : "抢购失败";
         Result result = new Result(success, message);
+        LOGGER.info("结果result: " + result.toString());
         return result;
     }
 
