@@ -21,6 +21,15 @@ public class Book implements Serializable{
     private String writer;
     private String introduction;
 
+    public Book() {
+    }
+
+    public Book(String name, String writer, String introduction) {
+        this.name = name;
+        this.writer = writer;
+        this.introduction = introduction;
+    }
+
     public Long getId() {
         return id;
     }
@@ -53,5 +62,13 @@ public class Book implements Serializable{
         this.introduction = introduction;
     }
 
-
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", writer='" + writer + '\'' +
+                ", introduction='" + introduction + '\'' +
+                '}';
+    }
 }
