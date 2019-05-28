@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 
 import java.lang.reflect.Method;
 
-@Configuration
-@EnableCaching //开启缓存。
+//@Configuration
+//@EnableCaching //开启缓存。
 public class RedisConfig extends CachingConfigurerSupport {
     /**
      * 配置主键的生产策略 KeyGenerator，如不配置会默认使用参数名作为主键。
