@@ -50,8 +50,9 @@ public class CityServiceImpl implements CityService {
         City city = cityMapper.findById(id);
 
         //插入缓存
-        operations.set(key,city,10,TimeUnit.SECONDS);
+        operations.set(key,city,10,TimeUnit.SECONDS); //缓存的时间仅有十秒钟
         LOGGER.info("CityServiceImpl.findCityById() : 城市插入缓存 >> " + city.toString());
+        LOGGER.info("刚才加入redis的数据是： "+operations.get(key));
         return city;
     }
 
