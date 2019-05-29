@@ -50,6 +50,8 @@ public class MyController {
         return paramsMap;
     }
 
+
+    //传递数组
     @GetMapping("/requestArray")
     @ResponseBody
     public Map<String, Object> requestAraay(int[] intArr, Long[] longArr, String[] strArr){
