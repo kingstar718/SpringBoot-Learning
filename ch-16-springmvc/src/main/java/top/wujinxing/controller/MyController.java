@@ -35,6 +35,7 @@ public class MyController {
         return paramsMap;
     }
 
+    //使用RequestParam传递参数  可传进与变量名不同的参数， 默认为true
     @GetMapping("/annotation")
     @ResponseBody
     public Map<String, Object> requestParam(
@@ -45,6 +46,17 @@ public class MyController {
         paramsMap.put("intVal", intVal);
         paramsMap.put("longVal", longVal);
         paramsMap.put("str", strVal);
+        LOGGER.info(paramsMap.toString());
+        return paramsMap;
+    }
+
+    @GetMapping("/requestArray")
+    @ResponseBody
+    public Map<String, Object> requestAraay(int[] intArr, Long[] longArr, String[] strArr){
+        Map<String, Object> paramsMap = new HashMap<>();
+        paramsMap.put("intArr", intArr);
+        paramsMap.put("longArr", longArr);
+        paramsMap.put("strArr", strArr);
         LOGGER.info(paramsMap.toString());
         return paramsMap;
     }
