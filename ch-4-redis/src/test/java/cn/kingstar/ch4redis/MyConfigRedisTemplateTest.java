@@ -36,7 +36,6 @@ public class MyConfigRedisTemplateTest {
         BoundHashOperations hashOps = redisTemplate.boundHashOps("测试");
         Map map1 = hashOps.entries();
         System.out.println(map1);
-        //System.out.println(redisTemplate.opsForValue().get("测试").toString());
     }
 
     static class User implements Serializable {
