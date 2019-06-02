@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
-
+    <!--<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $("button").click(function(){
-                $("p").hide();
+        $(function () {
+            $("#a").click(function () {
+                //alert("xyz");
+                /*for(var i=1; i<20; i++){
+                    alert(i)
+                }*/
+                for (var i=1; i<50000; i++){
+                    var params = {
+                        userId : 1,
+                        productId : 1,
+                        quantity : 1
+                    };
+                    $.post("./purchase",params,function (result) {
+                        /*alert(result)*/
+                    });
+                }
             });
         });
     </script>
 </head>
 <body>
-<h2>这是标题</h2>
-<p>这是一个段落。</p>
-<p>这是另一个段落。</p>
-<button>点击这里</button>
+
+<input type="button" value="并发访问" id="a" />
 
 
 </body>

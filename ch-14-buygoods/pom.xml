@@ -84,12 +84,7 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     </dependencies>
-    <resource>
-        <directory>src/main/java</directory>
-        <includes>
-            <include>**/*.xml</include>
-        </includes>
-    </resource>
+
 
     <build>
         <plugins>
@@ -98,6 +93,14 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 </project>
