@@ -12,7 +12,7 @@ import javax.annotation.PostConstruct;
  * date 2019 2019/4/30 17:04
  * description
  */
-@Service
+//@Service
 public class DataInit {
 
     @Autowired

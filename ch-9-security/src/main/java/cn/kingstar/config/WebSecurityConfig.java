@@ -14,9 +14,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * date 2019 2019/4/30 15:51
  * description Spring Security 配置
  */
-@Configuration   //注解这是一个配置类
-@EnableWebSecurity  //注解开启SpringSecurity功能
-@EnableGlobalMethodSecurity(prePostEnabled = true)  //开启Spring Security方法级安全,必须配置()内容才能使@PreAuthorize("hasAnyRole('admin')")生效
+//@Configuration   //注解这是一个配置类
+//@EnableWebSecurity  //注解开启SpringSecurity功能
+//@EnableGlobalMethodSecurity(prePostEnabled = true)  //开启Spring Security方法级安全,必须配置()内容才能使@PreAuthorize("hasAnyRole('admin')")生效
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     //第二种方式设置加密(推荐)
