@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch-5-mybatis-annotation" />
+        <module name="ch-16-springmvc" />
         <module name="ch-10-thymeleaf" />
         <module name="ch-7-crud-jpa-thymeleaf" />
         <module name="ch-11-fileupload" />
@@ -32,6 +33,7 @@
       <module name="ch-14-security-sql" target="1.8" />
       <module name="ch-15-department" target="1.8" />
       <module name="ch-16-druid" target="1.8" />
+      <module name="ch-17-security2" target="1.8" />
       <module name="ch-3-paging" target="1.8" />
       <module name="ch-5-jpa-mysql" target="1.8" />
       <module name="ch-5-mybatis" target="1.8" />
@@ -56,6 +58,8 @@
       <module name="ch-15-department" options="-parameters" />
       <module name="ch-15-jpa" options="-parameters" />
       <module name="ch-16-druid" options="-parameters" />
+      <module name="ch-16-springmvc" options="-parameters" />
+      <module name="ch-17-security2" options="-parameters" />
       <module name="ch-2-form-input" options="-parameters" />
       <module name="ch-3-paging-sort" options="-parameters" />
       <module name="ch-4-redis" options="-parameters" />
