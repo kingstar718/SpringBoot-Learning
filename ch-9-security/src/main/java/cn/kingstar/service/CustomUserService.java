@@ -18,7 +18,7 @@ import java.util.List;
  * date 2019 2019/6/3 15:57
  * description
  */
-@Service
+//@Service
 public class CustomUserService implements UserDetailsService {
 
     @Autowired
